@@ -8,7 +8,7 @@ warning('off','all')
 %filter the signal by Butterworth Filter (Analyst 2017 142 4317-4321) 
 %You can try changing cutoff frequency from 0.03 to something else to
 %better detrend your data.
-d=designfilt('highpassiir', 'FilterOrder', 2, 'HalfPowerFrequency', 0.01, 'SampleRate', 10, 'DesignMethod', 'butter');
+d=designfilt('highpassiir', 'FilterOrder', 2, 'HalfPowerFrequency', 0.03, 'SampleRate', 10, 'DesignMethod', 'butter');
 
 filtPlot=zeros(r,c);
 for i=1:r
